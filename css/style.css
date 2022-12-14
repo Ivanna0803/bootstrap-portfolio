@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url(../images/mountains.pnj.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar.scroll-transition {
+    transition: background-color 200ms linear;
+}
+
+.jumbotron {
+    background-color: transparent;
+    display: table;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {    
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.rounded-corners {
+    position: relative; 
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+}
