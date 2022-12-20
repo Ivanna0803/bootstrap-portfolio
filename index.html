@@ -1,65 +1,113 @@
 <!DOCTYPE html>
 <html lang="en-gb">
   <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./css/style.css"/>
-
-    <script>
-      onscroll = () => {
-        const navbar = $(".navbar"); 
-        const navbarHeight = navbar.height(); 
-        const distanseFromTop = $(this).scrollTop(); // Get distance scrolled from the top of the page
-
-        // Adding class "scrolled" to nav element if we scrolled down from top more then nav bar height
-        navbar.toggleClass("bg-dark", distanseFromTop > navbarHeight);
-      };
-    </script>
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>Ivanna Kuliak</title>
   </head>
 
   <body>
-    <nav
-      class="navbar navbar-expand-md navbar-dark scroll-transition fixed-top justify-content-start">
-      <button
-        class="navbar-toggler mr-3"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navLinks">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">Ivanna Kuliak</a>
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-md navbar-dark scroll-transition fixed-top justify-content-start">
+        <button
+          class="navbar-toggler mr-3"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navLinks">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Ivanna Kuliak</a>
 
-      <div class="collapse navbar-collapse flex-row-reverse" id="navLinks">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a href="#" class="nav-link">Work</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact Me</a></li>
-        </ul>
-      </div>
-    </nav>
+        <div class="collapse navbar-collapse flex-row-reverse" id="navLinks">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#about-me" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="#contact-me" class="nav-link">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
 
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <img class="rounded-corners" alt="Avatar" src="./images/fox.pnj.avif"/>
-        <h1 class="display-4">Ivanna Kuliak</h1>
-        <p class="lead">Web Development Student</p>
-      </div>
-    </div>
+      <!-- Jumbotron -->
+      <section class="jumbotron jumbotron-fluid">
+        <div class="container main-info">
+          <img class="rounded-corners" alt="Avatar" src="./images/fox.avif" />
+          <h1 class="display-4">Ivanna Kuliak</h1>
+          <p class="lead">Web Development Student</p>
+        </div>
+      </section>
+    </header>
 
-   <main></main>
+    <main class="bg-light">
+      
+      <!-- Skills -->
+      <section id="skills" class="text-center">
+        <h2 class="pt-3">Skills</h2>
+        <div class="container d-flex justify-content-around p-3">
+          <img
+            src="images/html.webp"
+            class="skill img-thumbnail rounded-circle"
+            alt="HTML"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="HTML" />
+          <img
+            src="./images/css.jpg"
+            class="skill img-thumbnail rounded-circle"
+            alt="CSS"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="CSS" />
+          <img
+            src="./images/js.png"
+            class="skill img-thumbnail rounded-circle"
+            alt="JavaScript"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="JavaScript" />
+          <img
+            src="./images/react.png"
+            class="skill img-thumbnail rounded-circle"
+            alt="React"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="React" />
+          <img
+            src="./images/json.jpeg"
+            class="skill img-thumbnail rounded-circle"
+            alt="JSON"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="JSON" />
+          <img
+            src="./images/mysql.png"
+            class="skill img-thumbnail rounded-circle"
+            alt="MySQL"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="MySQL" />
+        </div>
+      </section>
 
-   <footer></footer>
-        
-        
+      <!-- Projects -->      
+
+      <!-- About Me and Contact Me -->
+      
+    </main>
+
+    <!-- Footer -->
+    <footer class="vh-100 bg-dark"></footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -72,5 +120,17 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"></script>
+    <script>
+      onscroll = () => {
+        const navbar = $(".navbar");
+        const navbarHeight = navbar.height();
+        const distanseFromTop = $(this).scrollTop(); // Get distance scrolled from the top of the page
+
+        // Adding class "scrolled" to nav element if we scrolled down from top more then nav bar height
+        navbar.toggleClass("bg-dark", distanseFromTop > navbarHeight);
+      };
+
+      $('[data-toggle="tooltip"]').tooltip();
+    </script>
   </body>
 </html>
