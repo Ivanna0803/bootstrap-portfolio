@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url(../images/mountains.pnj.avif);
+    background-image: url(../images/mountains.avif);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -19,7 +19,7 @@ body {
     height: 100vh;
 }
 
-.container {    
+.main-info {    
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -31,3 +31,15 @@ body {
     height: 150px;
     border-radius: 50%;
 }
+
+.skill {
+    width: 8%;
+    padding: 5px;
+}
+
+
+
+
+
+   
+
