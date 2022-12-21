@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url(../images/mountains.avif);
     background-repeat: no-repeat;
@@ -32,10 +36,17 @@ body {
     border-radius: 50%;
 }
 
+.card-img-top {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    }
+
 .skill {
     width: 8%;
     padding: 5px;
 }
+
 
 
 
