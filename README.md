@@ -1,2 +1,29 @@
-# bootstrap-portfolio
-Portfolio Project based on the Bootstrap components
+# Bootstrap Portfolio
+
+## Description
+This Bootstrap Portfolio repository was created by a Bootcamp Front-End student as a part of module 3. The project is based on the Bootstrap components such as:
+
+- **Navbar**
+- **Jumbotron**
+- **Grid system**
+- **Cards**
+
+## Final Result
+![Portfolio Page](./images/Portfolio.png)
+
+## Installation
+
+“N/A” 
+
+## Usage
+
+To open deployed application, please follow the link:
+
+## Credits
+
+“N/A”
+
+## License
+
+ MIT license
+
