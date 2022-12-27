@@ -17,7 +17,7 @@ This Bootstrap Portfolio repository was created by a Bootcamp Front-End student 
 
 ## Usage
 
-To open deployed application, please follow the link:
+To open deployed application, please follow the link: https://ivanna0803.github.io/bootstrap-portfolio/
 
 ## Credits
 
